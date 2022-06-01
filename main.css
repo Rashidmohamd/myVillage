@@ -1,3 +1,7 @@
+#homepagebody {
+  overflow: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,10 +10,6 @@
 
 html {
   font-size: 16px;
-}
-
-body {
-  background: black;
 }
 
 @media (max-width: 1200px) {
