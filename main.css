@@ -1,5 +1,207 @@
+.overlaycontainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlaycontainer header .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 15vh;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  z-index: 80;
+}
+
+.overlaycontainer header .container .logo {
+  margin-left: 5vw;
+  display: flex;
+}
+
+.overlaycontainer header .container .logo img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.overlaycontainer header .container .logo .logoname {
+  margin-left: 2rem;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.overlaycontainer header .container .logo .logoname span {
+  color: yellow;
+}
+
+.overlaycontainer .menu {
+  position: fixed;
+  z-index: 500;
+  right: 3vw;
+  top: 4vh;
+  display: flex;
+  height: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all .5s linear;
+}
+
+.overlaycontainer .menu div {
+  width: 30px;
+  height: 3px;
+  background: white;
+}
+
+.overlaycontainer .close {
+  transform: rotate(45deg) translateY(10px);
+  transition: all .5s linear;
+  cursor: pointer;
+}
+
+.overlaycontainer .close div {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transition: all .5s linear;
+}
+
+.overlaycontainer .close .top {
+  transform: rotate(90deg);
+  transition: all .5s linear;
+}
+
+.overlaycontainer .close .hide {
+  display: none;
+  transition: all .5s linear;
+}
+
+.overlaycontainer .navsection {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.overlaycontainer .navsection .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.overlaycontainer .navsection .container section {
+  width: 50%;
+  height: 100%;
+}
+
+.overlaycontainer .navsection .container .sect1 {
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0, 100%, 0);
+  transition: all .5s linear;
+}
+
+.overlaycontainer .navsection .container .sect1 .imgsect {
+  margin-bottom: 2rem;
+  border-radius: 50%;
+}
+
+.overlaycontainer .navsection .container .sect1 .imgsect img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.overlaycontainer .navsection .container .sect1 .detailsect {
+  width: 70%;
+}
+
+.overlaycontainer .navsection .container .sect1 .detailsect h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+.overlaycontainer .navsection .container .sect1 .detailsect h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  margin-top: 1rem;
+}
+
+.overlaycontainer .navsection .container .sect2 {
+  transform: translate3d(0, -100%, 0);
+  transition: all .5s linear;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.overlaycontainer .navsection .container .sect2 nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.overlaycontainer .navsection .container .sect2 nav ul {
+  list-style: none;
+}
+
+.overlaycontainer .navsection .container .sect2 nav ul li {
+  margin: 5vh;
+}
+
+.overlaycontainer .navsection .container .sect2 nav ul li a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #f4f4f4;
+  font-style: italic;
+  margin-top: 5vh;
+  transition: all .5s linear;
+}
+
+.overlaycontainer .navsection .container .sect2 nav ul li a:hover {
+  color: #1ec;
+}
+
 #homepagebody {
   overflow: hidden;
+}
+
+#homepagebody .bodyBg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+#homepagebody .bodyBg .img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all .5s linear;
+}
+
+#homepagebody .bodyBg .show {
+  opacity: 1;
 }
 
 * {
@@ -26,7 +228,37 @@ html {
 
 @media (max-width: 720px) {
   html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 501px) {
+  html {
     font-size: 8px;
+  }
+  .overlaycontainer header .container .logo {
+    display: flex;
+    align-items: center;
+  }
+  .overlaycontainer header .container .logo img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .overlaycontainer header .container .logo .logoname {
+    margin-left: 4rem;
+  }
+  .overlaycontainer .navsection .container .sect1 .imgsect img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .overlaycontainer .navsection .container .sect1 .detailsect {
+    width: 90%;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 7px;
   }
 }
 /*# sourceMappingURL=main.css.map */
