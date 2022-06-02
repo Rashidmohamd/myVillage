@@ -450,8 +450,23 @@ footer P {
 
 #authorbodysect .media .mediaLinks a {
   text-decoration: none;
-  color: #333;
   font-size: 2.5rem;
+}
+
+#authorbodysect .media .mediaLinks a:nth-child(1) {
+  color: #376bdb;
+}
+
+#authorbodysect .media .mediaLinks a:nth-child(2) {
+  color: #07f317;
+}
+
+#authorbodysect .media .mediaLinks a:nth-child(3) {
+  color: #07a1e2;
+}
+
+#authorbodysect .media .mediaLinks a:nth-child(4) {
+  color: #ced7ce;
 }
 
 * {
