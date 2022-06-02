@@ -299,7 +299,14 @@ footer P {
 }
 
 #authorbodysect .overlaycontainer {
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: transparent;
+}
+
+#authorbodysect .overlaycontainer .navsection {
+  overflow: hidden;
+  visibility: hidden;
 }
 
 #authorbodysect .authorwrapper {
@@ -349,6 +356,11 @@ footer P {
   font-size: 1.5rem;
 }
 
+#authorbodysect .authorwrapper .container .about p span {
+  color: limegreen;
+  font-style: italic;
+}
+
 #authorbodysect .authorwrapper .container .about ul {
   list-style: none;
 }
@@ -361,7 +373,7 @@ footer P {
 }
 
 #authorbodysect .authorwrapper .container .about ul li:nth-child(1) {
-  color: green;
+  color: #030bad;
 }
 
 #authorbodysect .authorwrapper .container .about ul li:nth-child(2) {
@@ -393,6 +405,7 @@ footer P {
   border: none;
   border-radius: .5rem;
   background-color: green;
+  cursor: pointer;
 }
 
 #authorbodysect .authorwrapper .container .contact .form form button:hover {
@@ -416,6 +429,29 @@ footer P {
 
 #authorbodysect .authorwrapper .container .contact .form form textarea {
   border-radius: .4rem;
+}
+
+#authorbodysect hr {
+  margin: 1rem 0;
+  border-color: #0076ff;
+}
+
+#authorbodysect .media {
+  margin-top: 1rem;
+}
+
+#authorbodysect .media .mediaLinks {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+#authorbodysect .media .mediaLinks a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2.5rem;
 }
 
 * {
@@ -455,6 +491,9 @@ html {
   }
   #authorbodysect .authorwrapper .container .head .info {
     margin: 1rem;
+  }
+  #authorbodysect .media .mediaLinks {
+    width: 95%;
   }
 }
 

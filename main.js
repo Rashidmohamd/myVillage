@@ -8,6 +8,7 @@ function excute() {
         mentbtn.classList.add("close");
         document.querySelector(".sect1").style.transform = "translate3d(0,0,0)";
         document.querySelector(".sect2").style.transform = "translate3d(0,0,0)";
+        document.querySelector(".navsection").style.visibility = "visible";
         
 
 
@@ -16,6 +17,7 @@ function excute() {
         mentbtn.classList.remove("close");
         document.querySelector(".sect1").style.transform = "translate3d(0,100%,0)";
         document.querySelector(".sect2").style.transform = "translate3d(0,-100%,0)";
+          document.querySelector(".navsection").style.visibility = "hidden";
 
 
         cort = false;
@@ -37,3 +39,5 @@ function bgloop() {
 // setInterval(() => {
 //     bgloop();
 // },3000)
+
+
