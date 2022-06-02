@@ -8,6 +8,7 @@ function excute() {
         mentbtn.classList.add("close");
         document.querySelector(".sect1").style.transform = "translate3d(0,0,0)";
         document.querySelector(".sect2").style.transform = "translate3d(0,0,0)";
+        
 
 
         cort = true;
