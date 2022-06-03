@@ -2,7 +2,6 @@ const mentbtn = document.querySelector(".menu")
     mentbtn.addEventListener("click", excute);
 let cort = false;
 
-const imgclass = document.querySelectorAll(".img");
 function excute() {
    
     if (!cort) {
@@ -27,20 +26,5 @@ function excute() {
     }
 };
 
-
-function bgloop() {
-    const showclass = document.querySelector(".show");
-    showclass.classList.remove("show");
-    if (showclass.nextElementSibling) {
-        showclass.nextElementSibling.classList.add("show");
-    } else {
-
-        imgclass[0].classList.add("show")
-        
-    }
-}
-setInterval(() => {
-    bgloop();
-},3000)
 
 

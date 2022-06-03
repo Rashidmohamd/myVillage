@@ -83,6 +83,30 @@
 
 
     <script src="main.js"></script>
+
+    <!--for background images-->
+    <script>
+        
+            const imgclasses = document.querySelectorAll(".img");
+        
+            function bgloop() {
+                const showclass = document.querySelector(".show");
+                showclass.classList.remove("show");
+                if (showclass.nextElementSibling) {
+                    showclass.nextElementSibling.classList.add("show");
+                } else {
+
+                    imgclasses[0].classList.add("show")
+
+
+
+                }
+            }
+            setInterval(() => {
+                bgloop();
+            }, 3000)
+
+    </script>
     
 </body>
 </html>
