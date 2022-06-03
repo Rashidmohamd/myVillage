@@ -4,11 +4,14 @@ let cort = false;
 
 const imgclass = document.querySelectorAll(".img");
 function excute() {
+   
     if (!cort) {
         mentbtn.classList.add("close");
+        
         document.querySelector(".sect1").style.transform = "translate3d(0,0,0)";
         document.querySelector(".sect2").style.transform = "translate3d(0,0,0)";
         document.querySelector(".navsection").style.visibility = "visible";
+        document.querySelector(".navsection .container").style.background = "rgba(255,255,255,0.8"
         
 
 
@@ -36,8 +39,8 @@ function bgloop() {
         
     }
 }
-// setInterval(() => {
-//     bgloop();
-// },3000)
+setInterval(() => {
+    bgloop();
+},3000)
 
 

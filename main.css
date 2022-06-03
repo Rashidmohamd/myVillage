@@ -9,7 +9,7 @@
 }
 
 .overlaycontainer header .container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -197,7 +197,7 @@ footer P {
 }
 
 #homepagebody .overlaycontainer {
-  background: rgba(39, 40, 40, 0.5);
+  background: rgba(76, 75, 75, 0.3);
 }
 
 #homepagebody .bodyBg {
@@ -292,6 +292,10 @@ footer P {
   margin: 2rem 0;
   font-size: 2.5rem;
   font-weight: 400;
+}
+
+html {
+  transition: all 1s linear;
 }
 
 #authorbodysect {
@@ -498,6 +502,9 @@ html {
   html {
     font-size: 12px;
   }
+  .overlaycontainer .menu {
+    right: 5vw;
+  }
   #authorbodysect .authorwrapper .container .head {
     flex-direction: column;
     justify-content: center;
@@ -516,6 +523,13 @@ html {
   html {
     font-size: 10px;
   }
+  .overlaycontainer .menu {
+    right: .5vw;
+    margin: 2rem 0 1rem 1rem;
+  }
+  .overlaycontainer .menu div {
+    width: 25px;
+  }
   .overlaycontainer header .container .logo {
     display: flex;
     align-items: center;
@@ -525,7 +539,7 @@ html {
     height: 9rem;
   }
   .overlaycontainer header .container .logo .logoname {
-    margin-left: 4rem;
+    margin-left: 2rem;
   }
   .overlaycontainer .navsection .container .sect1 .imgsect img {
     width: 15rem;
