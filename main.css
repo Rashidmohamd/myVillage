@@ -252,6 +252,10 @@ footer P {
   overflow-x: hidden;
 }
 
+#aboutbodysect .overlaycontainer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .aboutmainbody {
   width: 100vw;
 }
@@ -314,7 +318,7 @@ html {
 }
 
 #authorbodysect .authorwrapper {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(79, 32, 77, 0.3);
   width: 100vw;
   padding-top: 20vh;
   z-index: 70;
@@ -361,7 +365,7 @@ html {
 }
 
 #authorbodysect .authorwrapper .container .about p span {
-  color: limegreen;
+  color: #035903;
   font-style: italic;
 }
 
@@ -381,11 +385,11 @@ html {
 }
 
 #authorbodysect .authorwrapper .container .about ul li:nth-child(2) {
-  color: lime;
+  color: #045504;
 }
 
 #authorbodysect .authorwrapper .container .about ul li:nth-child(3) {
-  color: yellow;
+  color: #676705;
 }
 
 #authorbodysect .authorwrapper .container .contact h3 {
@@ -475,7 +479,7 @@ html {
 }
 
 #authorbodysect .media .mediaLinks a:nth-child(4) {
-  color: #ced7ce;
+  color: #fdfffd;
 }
 
 * {
