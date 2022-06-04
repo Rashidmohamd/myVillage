@@ -525,7 +525,7 @@ html {
   }
   .overlaycontainer .menu {
     right: .5vw;
-    margin: 2rem 0 1rem 1rem;
+    margin: 0rem 0 1rem 1rem;
   }
   .overlaycontainer .menu div {
     width: 25px;
