@@ -455,6 +455,11 @@ html {
 #authorbodysect .media .mediaLinks a {
   text-decoration: none;
   font-size: 2.5rem;
+  transition: all .5s linear;
+}
+
+#authorbodysect .media .mediaLinks a:hover {
+  transform: scale(1.3);
 }
 
 #authorbodysect .media .mediaLinks a:nth-child(1) {
@@ -466,7 +471,7 @@ html {
 }
 
 #authorbodysect .media .mediaLinks a:nth-child(3) {
-  color: #07a1e2;
+  color: #6e1515;
 }
 
 #authorbodysect .media .mediaLinks a:nth-child(4) {
@@ -500,7 +505,7 @@ html {
 
 @media (max-width: 720px) {
   html {
-    font-size: 12px;
+    font-size: 13px;
   }
   .overlaycontainer .menu {
     right: 5vw;
