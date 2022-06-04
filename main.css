@@ -526,7 +526,7 @@ html {
 
 @media (max-width: 501px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   .overlaycontainer .menu {
     top: 1vh;
